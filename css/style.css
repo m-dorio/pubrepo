@@ -6,22 +6,41 @@
     border: none ;
     outline: none;
     scroll-behavior: smooth;
-    font-family:'forest';
+    font-family: 'blankspace' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 
 }
 
-@font-face {
-    font-family: 'blankspace';
-    src: url(./fonts/blankspace.otf);
+
+body {
+    background-color: rgb(31, 44, 44);
+    
+    /* overflow-x: hidden !important; */
 }
 
+:root{
+    --main-bg-color: rgb(27, 72, 80);
+    --first-bg-color:  rgb(42, 58, 61);
+    --second-bg-color:  rgb(31, 44, 44);
+    --second-text-color:  rgb(30, 137, 163);
+    --text-color:#fff;
+    --main-color:#0ef;
+    --blue-color:#008ae6;
+    --text-button-color:rgb(0, 83, 88);
+}
+
+html {
+    background: var(--main-bg-color);
+    color: var(--text-color);
+   
+}
+
+
+
 @font-face {
-    font-family: 'pricedown-bl';
+    font-family:'blankspace';
+    src: url(./fonts/conthrax-sb.otf);
     src: url(./fonts/pricedown-bl.otf);
-}
-
-@font-face {
-    font-family: 'forest';
+    src: url(./fonts/blankspace.otf);
     src: url(./fonts/forest.otf);
 }
 
@@ -33,6 +52,7 @@
       text-shadow: 0 0 5px #fff, 0 0 15px #85fff9, 0 0 25px #4dfff0, 0 0 30px #4dfff0, 0 0 35px #005045, 0 0 40px #006d64, 0 0 50px #004b55;
     }
 }
+
 
 @keyframes floatImage{
     0%{
@@ -60,29 +80,6 @@
         -webkit-transform: scaleX(1);
         transform: scaleX(1); 
     }
-}
-
-
-body {
-    background-color: rgb(31, 44, 44);
-    /* overflow-x: hidden !important; */
-}
-
-:root{
-    --main-bg-color: rgb(27, 72, 80);
-    --first-bg-color:  rgb(42, 58, 61);
-    --second-bg-color:  rgb(31, 44, 44);
-    --second-text-color:  rgb(30, 137, 163);
-    --text-color:#fff;
-    --main-color:#0ef;
-    --blue-color:#008ae6;
-    --text-button-color:rgb(0, 83, 88);
-}
-
-html {
-    background: var(--main-bg-color);
-    color: var(--text-color);
-   
 }
 
 section {
