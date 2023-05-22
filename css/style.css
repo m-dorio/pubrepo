@@ -6,8 +6,8 @@
     border: none ;
     outline: none;
     scroll-behavior: smooth;
-    font-family:Forrest-gallery;
-    
+    font-family:forest;
+
 }
 
 @font-face {
@@ -21,8 +21,8 @@
 }
 
 @font-face {
-    font-family: 'Forrest-gallery';
-    src: url(./fonts/Forrest-gallery.otf);
+    font-family: 'forest';
+    src: url(./fonts/forest.otf);
 }
 
 @-webkit-keyframes glow {
