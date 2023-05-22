@@ -12,17 +12,17 @@
 
 @font-face {
     font-family: 'blankspace';
-    src: url(/fonts/blankspace.otf);
+    src: url(./fonts/blankspace.otf);
 }
 
 @font-face {
     font-family: 'pricedown-bl';
-    src: url(/fonts/pricedown-bl.otf);
+    src: url(./fonts/pricedown-bl.otf);
 }
 
 @font-face {
     font-family: 'Forrest-gallery';
-    src: url(/fonts/Forrest-gallery.otf);
+    src: url(./fonts/Forrest-gallery.otf);
 }
 
 @-webkit-keyframes glow {
