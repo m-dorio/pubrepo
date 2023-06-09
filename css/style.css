@@ -31,7 +31,7 @@ body {
 html {
     background: var(--main-bg-color);
     color: var(--text-color);
-   
+    font-size: 95%;
 }
 
 
@@ -85,7 +85,7 @@ html {
 section {
     min-height: 100vh;
     max-width: 100vmax;
-    padding: 10rem 2rem 9% ;
+    padding: 12rem ;
 }
 
 .header {
@@ -93,7 +93,7 @@ section {
     top: 0%;
     left: 0%;
     width: 100vw;
-
+    justify-content:center;
     background: var(--main-bg-color);
     display: flex ;
     justify-content: space-between;
@@ -143,6 +143,7 @@ section {
 
 
 .home{
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,11 +309,11 @@ span{
   flex: 1 1 30rem;
   background: var(--second-bg-color);
   padding: 2rem 2rem 4rem;
-  border-radius:  15rem;
+  border-radius:  80px 0px 80px 0px;
   text-align: center;
   /* border-color: var(-second-bg-color); */
   border: .2rem solid var(--main-color);
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: .35s ease;
 
 }
@@ -320,7 +321,7 @@ span{
 .services-container .services-box:hover{
     background: var(--main-bg-color);
     border: .2rem solid var(--text-color);
-    transform: scale(1.01);
+    transform: scale(1);
     
 }
 
@@ -373,7 +374,7 @@ span{
     height: 100%;
     max-height: 300px;
  
-    transition: .35s ease;
+    transition: .25s ease;
 }
 
 .portfolio-box:hover img {
@@ -505,22 +506,62 @@ span{
     width: 48%;
 }
 
+@media (max-width: 1780px){
+    html{
+        font-size: 65%;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2.2rem;
+    }
+}
 
 @media (max-width: 1280px){
     
     
     html{
-        font-size: 65%;
+        font-size: 55%;
     }
 
+    .navbar.active{
+        display: block;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.2rem;
+    }
 }
 
 @media (max-width: 1024px){
 
-    
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.2rem;
+    }
+
     .header{
         padding: 2rem 1rem 3%;
     }
+
+    html{
+        font-size: 60%;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
 
     .section {
         min-height: 100vh;
@@ -547,16 +588,24 @@ span{
  
 }
 
-@media (max-width: 800px){
 
-    #menu-icon{
-        display: block;
-    }
-
-     .section {
+@media (max-width: 720px){
+    .section {
         min-height: 100vh;
         max-width: 100vmax;
         padding: 10rem 2rem 9% ;
+    }
+
+    html{
+        font-size: 65%;
+    }
+    
+    .navbar.active{
+        display: block;
+    }
+
+    #menu-icon{
+        display: block;
     }
 
     .navbar{
@@ -569,10 +618,6 @@ span{
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
-    }
-
-    .navbar.active{
-        display: block;
     }
 
     .navbar a{
@@ -618,11 +663,12 @@ span{
 
     }
 
-    .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.2rem;
     }
-
-  
 }
 
 @media(max-width: 600px){
@@ -634,10 +680,12 @@ span{
         display: block;
     }
 
-    /* section{
-        padding: 2rem 3% 2rem;
-    } */
-  
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.2rem;
+    }
 }
 
 @media(max-width: 480px){
