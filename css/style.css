@@ -13,7 +13,7 @@
 
 body {
     background-color: rgb(31, 44, 44);
-    
+  
     overflow-x: hidden !important;
 }
 
@@ -555,7 +555,8 @@ span{
     }
 
     html{
-        font-size: 60%;
+        font-size: 50%;
+      
     }
 
     .navbar.active{
@@ -588,6 +589,93 @@ span{
  
 }
 
+@media (max-width: 850px){
+
+    .navbar.active{
+        display: block;
+    }
+
+    html{
+        font-size: 50%;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.2rem;
+    }
+
+    .section {
+        min-height: 100vh;
+        max-width: 100vmax;
+        padding: 10rem 2rem 9% ;
+    }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+
+ 
+}
+
+@media (max-width: 800px){
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.2rem;
+    }
+
+    .header{
+        padding: 2rem 1rem 3%;
+    }
+
+    html{
+        font-size: 50%;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .section {
+        min-height: 100vh;
+        max-width: 100vmax;
+        padding: 10rem 2rem 9% ;
+    }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+
+ 
+}
 
 @media (max-width: 720px){
     .section {
@@ -597,7 +685,7 @@ span{
     }
 
     html{
-        font-size: 65%;
+        font-size: 55%;
     }
     
     .navbar.active{
